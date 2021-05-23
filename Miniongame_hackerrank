@@ -1,0 +1,19 @@
+"""This is the code for the minion game problem on hackeerrank """
+def minion_game(s):
+    a=0
+    b=0
+    s=s.lower()
+    l= [s[:_] for _ in range(1,len(s)+1)]
+    vov = 'aeiou'
+    for _ in range(len(l)):
+        for i in range(len(l[_])):
+            if l[_][i] in vov:
+                a+=1
+            else:
+                b+=1
+    if b>a:
+        print(f'Stuart {b}')
+    elif a>b:
+        print(f'Kevin {a}')
+    else:
+        print('Draw')
