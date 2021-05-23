@@ -1,3 +1,4 @@
+''''This is the server side code for transfering file from the server to a client '''
 import socket
 import sys
 import os
